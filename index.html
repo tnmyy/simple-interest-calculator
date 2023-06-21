@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Interest Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- Form -->
+      <form action="#" id="inputDetails">
+        <!-- Principal Amount -->
+
+        <div class="inputData">
+          <label for="principal">Principal (₹):</label>
+          <input type="number" name="principal" id="principal" />
+        </div>
+
+        <!-- Interest Rate -->
+
+        <div class="inputData">
+          <label for="rate">Rate:</label>
+          <input type="number" name="rate" id="rate" />
+        </div>
+
+        <!-- Time -->
+
+        <div class="inputData">
+          <label for="time">Time (years):</label>
+          <input type="number" name="time" id="time" />
+          <select id="timePeriod">
+            <option value="year" selected="">Year</option>
+            <option value="month">Month</option>
+          </select>
+        </div>
+
+        <!-- Calculate -->
+
+        <button id="btn">Calculate</button>
+      </form>
+
+      <div id="output">
+        <p>Principal Amount: <span id="principalOutput"></span></p>
+        <p>Total Interest: <span id="interestOutput"></span></p>
+        <p>Total Amount: <span id="amountOutput"></span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
