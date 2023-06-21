@@ -23,10 +23,15 @@ btn.addEventListener("click", (event) => {
   let time = Number.parseInt(timeInput.value);
   let timePeriod = timePeriodInput.value;
 
-  //   console.log(principal);
-  //   console.log(rate);
-  //   console.log(time);
-  //   console.log(timePeriod);
+  console.log(principal);
+  console.log(rate);
+  console.log(time);
+  console.log(timePeriod);
+
+  console.log(typeof principal);
+  console.log(typeof rate);
+  console.log(typeof time);
+  console.log(typeof timePeriod);
 
   //   Applying Formulae
 
@@ -44,9 +49,9 @@ btn.addEventListener("click", (event) => {
     totalInterest = (principal * rate * time) / (12 * 100);
   }
 
-  console.log(`Total Interest ${totalInterest}`);
-
   totalAmount = totalInterest + principal;
+  console.log(`Principal Amount ${principal}`);
+  console.log(`Total Interest ${totalInterest}`);
   console.log(`Total Amount ${totalAmount}`);
 
   //   Entering Output Data
